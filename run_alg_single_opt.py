@@ -87,7 +87,6 @@ def main(case='Test'):
     ## Only using naive MC
     theIRobj.reset(log_name=case+'_log_MC_objective', verbose=True, bMC=True)
     theIRconstr.reset(log_name=case+'_log_MC_constraint', verbose=True, bMC=True)
-
     runopt(theIRobj, theIRconstr, x0, lb, ub)
 
 
